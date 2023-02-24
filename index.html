@@ -6,31 +6,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Even Odd List</title>
   <script src="./app.js" defer></script>
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  
-  <h1>Even Odd Lists</h1>
-  <hr/> 
 
-  <form id="even-odd-form" autocomplete="off" target="_blank">
-    <div> 
-      <label for="word">word</label> 
-      <input type="text" name="word" id="word"  placeholder="What's the word?" onkeyup="updateWord(this)"> 
-    </div>
-    <div>
-      <input type="button" value="Even or Odd?" onclick="handleSubmit()">
-    </div>
-  </form>
+  <div class="main-container">
 
-  <section>
-    <h2>Even</h2>
-    <ul id="even"></ul>
-  </section>
+    <div class="title">
+      <h1>Even Odd Lists</h1>
+    </div>  
 
-  <section>
-    <h2>Odd</h2>
-    <ul id="odd"></ul>
-  </section>
+
+    <form id="even-odd-form" autocomplete="off" target="_blank">
+      <div> 
+        <label for="word">Put your word here</label> 
+        <input type="text" name="word" id="word"  placeholder="That's right, here" onkeyup="updateWord(this)"> 
+      </div>
+
+      <div>
+        <input type="button" value="Even or Odd?" onclick="handleSubmit()">
+      </div>
+    </form>
+
+    <section>
+      <h2>Even</h2>
+      <ul id="even"></ul>
+    </section>
+
+    <section>
+      <h2>Odd</h2>
+      <ul id="odd"></ul>
+    </section>
+  </div>
 
 </body>
 </html>
